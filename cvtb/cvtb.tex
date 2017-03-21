@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Thomas}{Boquet}{ \urlstyle{same}\MYhref[customlinksg]{http://ca.linkedin.com/in/tboquet/}{ca.linkedin.com/in/tboquet/} \\
+\MYhref[customlinksg]{mailto:thomas.boquet@hec.ca}{thomas.boquet@hec.ca} | 514.625.4575
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{HEC Montréal}
+\descript{Ph.D. Decision Sciences}
+\location{2014 - 2015}
+ completed coursework
+\sectionsep
+
+
+\descript{M.Sc. Business Intelligence}
+\location{Grad. Jan 2014 }
+Thesis grade: A+ \\
+Advisors: D. Larocque \& R. Legoux \\
+
+
+\sectionsep
+
+\subsection{Université de Montréal}
+\descript{B.Sc. Economics}
+\location{Grad. Dec 2012}
+Final project grade: A+ \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Machine learning for vision \\
+Pattern recognition \\
+Automatic classification \\
+Applied econometrics \\
+Data Mining \\
+GLMM \& Survival data analysis \\
+Integer programming \\
+Time series econometrics \\
+\sectionsep
+
+\subsection{Undergraduate}
+Calculus
+Econometrics I, II and III \\
+Advanced Econometrics \\
+Econometrics of auctions \\
+Cost benefit analysis \\
+Microeconomics I, II \\
+Financial economics \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Programming Skills}
+\location{Over 20K lines:}
+Python \textbullet{} R \textbullet{} SAS \textbullet{}
+\LaTeX \textbullet{} SQL \\
+\location{Familiar:}
+C++ \textbullet{} Javascript \textbullet{} C \textbullet{} bash shell \\
+\location{Technologies and libraries:}
+Theano \textbullet{}  TensorFlow \textbullet{}  Keras  \textbullet{}  Numpy
+Scipy \textbullet{} Spark \textbullet{} Cython \textbullet{} Docker Engine \\
+MongoDB \textbullet{}  MapReduce \textbullet{}  git \textbullet{} Flask  \\
+AWS EC2 \textbullet{}  Docker Machine \textbullet{} Celery  \\
+Travis \textbullet{} Docker Swarm \textbullet{} Docker Compose \\
+
+\sectionsep
+
+\section{Publications}
+\begingroup
+\renewcommand{\section}[2]{}%
+\begin{thebibliography}{1}
+   \bibitem{Legoux15}
+          \href{http://www.sciencedirect.com/science/article/pii/S016781161500083X}{Legoux, Renaud, et al. \emph{The effect of critical reviews on exhibitors' decisions: Do reviews affect the survival of a movie on screen?}. International Journal of Research in Marketing (2015).}
+\end{thebibliography}
+\endgroup
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Profile}
+
+\runsubsection{R \& D}
+\descript{| Data Science and machine learning}
+\location{ - Build models on a daily basis with \MYhref[customlinks]{http://deeplearning.net/software/theano/}{Theano}, \MYhref[customlinks]{https://www.tensorflow.org/}{\textit{Tensorflow}}, \MYhref[customlinks]{http://keras.io/}{Keras} \\
+\MYhref[customlinks]{https://github.com/fchollet/keras/commits?author=tboquet}{- Contribute} on Keras and is official reviewer on the Keras-contrib repository\\
+- Implement and  recent papers of machine learning models (
+\MYhref[customlinks]{http://arxiv.org/abs/1605.06465}{Swapout}, 
+\MYhref[customlinks]{https://arxiv.org/abs/1610.09513}{Phased LSTM}, \MYhref[customlinks]{https://arxiv.org/abs/1602.07868}{Weight normalization}, \MYhref[customlinks]{https://arxiv.org/abs/1512.05287}{Dropout in RNNs}, etc)}
+\sectionsep
+
+\runsubsection{Management}
+\descript{| project planning and communication}
+\location{- Lead the development of an asynchronous \MYhref[customlinks]{https://github.com/tboquet/python-alp}{prediction system} \\
+- Lead 3 data scientists during the buildup of an analytics solution for \MYhref[customlinks]{http://www.siegefall.com/}{Siegefall} \\
+- Present results using \MYhref[customlinks]{https://nbviewer.jupyter.org/format/slides/github/tboquet/presentations/blob/master/ALP\%20presentation.ipynb}{interactive tools} (\MYhref[customlinks]{https://nbviewer.jupyter.org/format/slides/github/tboquet/presentations/blob/master/Keras_intro.ipynb#/}{jupyter}, impress.js, Flask web apps)}
+\sectionsep
+
+
+\section{Work Experience}
+
+\runsubsection{Element AI}
+\descript{| Data Scientist}
+\location{Feb 2017 – present | Montreal, QC}
+\sectionsep
+
+\runsubsection{R2}
+\descript{| Data Scientist }
+\location{Oct 2015 - Present | Montréal, QC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Implement and apply machine learning models to anomaly detection problems
+\item Develop a \MYhref[customlinks]{https://github.com/tboquet/python-alp}{\textit{dockerized light platform}} for asynchronous models training, reporting and deployment for several users and several machines. The services could assign ressources (GPUs) to specific tasks and save all the results in databases. \end{tightemize}
+% \sectionsep
+
+\sectionsep
+\runsubsection{Gameloft}
+\descript{| Data Scientist }
+\location{Feb 2015 - oct 2015 | Montréal, QC}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed a very high level machine learning library (Keras, Sphinx)\item Developed predictive models of churn, monetization and conversion (Keras) \item Built and developed a Lifetime Value model based on users behaviour (Keras) \end{tightemize}
+\sectionsep
+
+\runsubsection{Intema}
+\descript{| Analytics developer}
+\location{Sep 2013 – Aug 2014 | Montréal, QC}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed personalized online offers models based on users behavior \item Integrated per user web analytics' metrics to the existing databases and prediction workflow \end{tightemize}
+\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Academic Research}
+
+\runsubsection{GERAD}
+\descript{| Research Associate}
+\location{May 2014 – May 2015 | Montreal, QC}
+\begin{tightemize}
+\item Developed Text mining analysis tools on large databases \item Developed web scraping systems \item Benchmarked machine learning models on supervised tasks \end{tightemize}
+\sectionsep
+
+\runsubsection{HEC Montreal}
+\descript{| Research assistant - Teaching assistant}
+\location{Jan 2013 – Feb 2015 | Montreal, QC}
+\begin{tightemize}
+\item Worked with \textbf{\MYhref[customlinks]{http://www.hec.ca/profs/pierre-thomas.leger.html}{Pierre-Thomas Léger}} on bike sharing systems modelisation \item Taught two lessons of the M.Sc. course \MYhref[customlinks] {https://zonecours2.hec.ca/sdata/c/attachment/6-105-13.H2016/OpenSyllabus/6-105-13.H2016.00_public.pdf}{Database Marketing Analysis} and supported students in their final projects \item Taught undergraduate statistics course labs
+\item Graded the homeworks, personal projects and exams for the M.Sc. course \MYhref[customlinks] {https://zonecours2.hec.ca/sdata/c/attachment/6-613-11.A2015/OpenSyllabus/6-613-11.A2015.00_public.pdf}{Statistical softwares for data analysis} \end{tightemize}
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
